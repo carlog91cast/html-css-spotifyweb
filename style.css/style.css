@@ -21,7 +21,7 @@
 .col-left{
     background-color: black;
     height: calc(100vh - 70px);
-    width: 15%;
+    width: 20%;
 
 }
 
@@ -51,16 +51,45 @@
 .main-content{
 
 }
+
+/* categories */
+
 ul{
     display: flex;
     justify-content: center;
+    margin:0 40px;
+    font-size: 10px;
 
 }
 li{
     list-style: none;
     padding: 5px;
     color: lightgray;
-    margin: 20px 15px;
+    margin: 20px 10px;
+    font-weight: 800;
+}
+
+/* gallery-songs */
+
+.main-content h2{
+    color: white;
+    margin: 25px 0;
+}
+.playlist {
+   display: flex;
+}
+.song{
+    padding: 0 5px;
+}
+.song img {
+    width: 100%;
+}
+.song h3{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
 }
 
 /* command panel */
