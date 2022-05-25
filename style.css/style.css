@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* spotify-content */
@@ -16,7 +17,7 @@
 .col-left{
     background-color: black;
     height: calc(100vh - 70px);
-    width: 20%;
+    width: 15%;
 
 }
 
@@ -30,6 +31,9 @@
 }
 
 .header{
+    background-color: #080B12;
+    width: 100%;
+    height: 10%;
 
 }
 
