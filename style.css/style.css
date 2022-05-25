@@ -1,0 +1,44 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* spotify-content */
+
+.main-box{
+    display: flex;
+
+}
+
+/* playlist */
+
+.col-left{
+    background-color: black;
+    height: calc(100vh - 70px);
+    width: 20%;
+
+}
+
+/* songs and videos */
+
+.col-right{
+    background-color: #141922;
+    width: 100%;
+    height: calc(100vh - 70px);
+
+}
+
+.header{
+
+}
+
+.main-content{
+
+}
+
+footer{
+    background-color: #282828;
+    width: 100%;
+    height: 70px;
+}
