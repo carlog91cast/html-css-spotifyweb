@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 
@@ -11,36 +11,38 @@
 
 /* spotify-content */
 
-.main-box{
+.main-box {
     display: flex;
 
 }
 
 /* playlist */
 
-.col-left{
+.col-left {
     background-color: black;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     width: 20%;
 
 }
 
 /* songs and videos */
 
-.col-right{
+.col-right {
     background-color: #141922;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
 
 }
 
-.header{
+.header {
     background-color: #080B12;
     width: 100%;
     height: 10%;
 
 }
-.upgrade-btn{
+
+.upgrade-btn {
     color: white;
     padding: 15px 20px;
     border: white solid 2px;
@@ -48,45 +50,57 @@
     border-radius: 25px;
 }
 
-.main-content{
-
-}
 
 /* categories */
 
-ul{
+ul {
     display: flex;
     justify-content: center;
-    margin:0 40px;
+    margin: 0 40px;
     font-size: 10px;
 
 }
-li{
+
+li {
     list-style: none;
     padding: 5px;
-    color: lightgray;
+    color: gray;
     margin: 20px 10px;
     font-weight: 800;
 }
 
 /* gallery-songs */
 
-.main-content h2{
+.main-content {
+    margin: 0 10px;
+}
+
+.main-content h2 {
     color: white;
-    margin: 25px 0;
+    margin: 10px 0px;
 }
+
+.main-content p {
+    margin: 5px 0 20px;
+    color: gray;
+    font-size: 12px;
+}
+
 .playlist {
-   display: flex;
+    display: flex;
 }
-.song{
+
+.song {
     padding: 0 5px;
+    margin: 15px 0;
 }
+
 .song img {
     width: 100%;
 }
-.song h3{
+
+.song h3 {
     color: white;
-    font-weight: 600;
     font-size: 14px;
     text-align: center;
     margin: 10px 0;
@@ -94,14 +108,77 @@ li{
 
 /* command panel */
 
-footer{
+footer {
     background-color: #282828;
     width: 100%;
-    height: 70px;
+    height: 80px;
+    position: fixed;
+    justify-content: space-around;
+    display: flex;
 }
+
+/* track img */
+
+.footer-left {
+    margin: 0;
+    display: flex;
+    justify-self: flex-start;
+
+}
+
+.sinister {
+    width: 10%;
+    margin: 15px 10px;
+}
+
+.sinister img {
+    width: 100%;
+    text-align: center;
+
+}
+
+.sinister-text {
+    margin: 20px 15px 20px 0;
+}
+
+.sinister-text h4 {
+    color: white;
+    font-size: 10px;
+}
+
+.sinister-text p {
+    color: gray;
+    font-size: 10px;
+}
+
+/* icon */
+
+span {
+    margin: 25px 15px 25px 30px;
+    color: gray;
+}
+
+/* command btn */
+
+.footer-right{
+    display: flex;
+}
+
+.command {
+    width: 100%;
+    display: flex;
+}
+.command i{
+    padding: 15px 25px;
+    color: white;
+    display: block;
+}
+
+.volume-bar{
+
+}
+
+
 
 /* LAYOUT RESPONSIVE */
 
-@media screen and (min-width: 701px) {
-    
-}
