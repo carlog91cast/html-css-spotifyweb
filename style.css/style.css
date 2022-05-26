@@ -20,8 +20,8 @@
 
 .col-left {
     background-color: black;
-    height: calc(100vh - 80px);
-    width: 20%;
+    height: calc(100vh - 90px);
+    width: 250px;
 
 }
 
@@ -30,8 +30,8 @@
 .col-right {
     background-color: #141922;
     width: 100%;
-    height: calc(100vh - 80px);
-    overflow-y: scroll;
+    height: calc(100vh - 90px);
+    overflow: auto;
 
 }
 
@@ -111,10 +111,10 @@ li {
 footer {
     background-color: #282828;
     width: 100%;
-    height: 80px;
+    height: 90px;
     position: fixed;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-between;
 }
 
 /* track img */
@@ -160,7 +160,7 @@ span {
 
 /* command btn */
 
-.footer-right{
+.footer-center {
     display: flex;
 }
 
@@ -168,13 +168,24 @@ span {
     width: 100%;
     display: flex;
 }
-.command i{
+
+.command i {
     padding: 15px 25px;
     color: white;
     display: block;
 }
 
-.volume-bar{
+.volume-bar {}
+
+/* volume section */
+
+.footer-right {
+    display: flex;
+}
+
+.icon {
+    color: white;
+
 
 }
 
@@ -182,3 +193,8 @@ span {
 
 /* LAYOUT RESPONSIVE */
 
+@media screen and (max-width: 600px) {
+    .col-left {
+        width: 50px;
+    }
+}
