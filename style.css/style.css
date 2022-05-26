@@ -193,6 +193,8 @@ span {
 
 /* LAYOUT RESPONSIVE */
 
+/* responsive mobile */
+
 @media screen and (max-width: 600px) {
     .col-left {
         width: 50px;
