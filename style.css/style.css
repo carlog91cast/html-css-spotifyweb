@@ -226,7 +226,6 @@ footer {
 /* command btn */
 
 .footer-center {
-    display: flex;
     width: 40%;
 
 }
@@ -244,6 +243,14 @@ footer {
     display: block;
 }
 
+/* volume bar */
+
+.volume{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .volume-bar {
     width: 100%;
     height: 1px;
@@ -252,14 +259,14 @@ footer {
 }
 
 .time-passed {
-    border: 2px solid var(--color7);
+    border: 2px solid white;
     border-radius: 15px;
     width: 9%;
     position: absolute;
-    top: 0%;
-    left: 0%;
-    display: none;
+    top: 72px;
+    left: 30%;
 }
+
 
 
 
@@ -267,7 +274,7 @@ footer {
 
 .footer-right {
     display: flex;
-    width: 30%;
+    width: 15%;
     align-items: center;
     justify-content: center;
 
@@ -275,10 +282,27 @@ footer {
 
 .icon {
     color: white;
+    margin-left: 30%;
 }
 
 .icon i {
-    padding: 15px;
+    padding: 5px;
+}
+
+.volume-set-bar{
+    width: 11%;
+    height: 1px;
+    border: 2px solid grey;
+    border-radius: 15px; 
+    margin: auto;
+}
+.volume-up{
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 3%;
+    position: absolute;
+    top: 48%;
+    right: 10%; 
 }
 
 
