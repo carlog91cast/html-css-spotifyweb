@@ -34,8 +34,29 @@
 
 /* nav bar */
 
-nav img{
-    width: 10%;
+nav{
+    display: flex;
+}
+.col-left-icon img {
+    width: 30%;
+    padding: 5px 0;
+}
+
+
+.col-left-icon {
+    display: flex;
+    flex-direction: column;
+    
+}
+.col-left-text{
+    color: grey;
+}
+.col-left-text ul{
+    display: block;
+}
+.col-left-text ul li{
+    list-style: none;
+    margin: 0;
 }
 
 /* songs and videos */
