@@ -10,7 +10,9 @@
 
 
 /* spotify-content */
-
+.main{
+    height: calc(100vh - 90);
+}
 .main-box {
     display: flex;
 
@@ -131,7 +133,8 @@ nav {
     background-color: #141922;
     width: 100%;
     height: calc(100vh - 90px);
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
