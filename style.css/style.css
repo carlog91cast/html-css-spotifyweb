@@ -10,9 +10,10 @@
 
 
 /* spotify-content */
-.main{
+.main {
     height: calc(100vh - 90);
 }
+
 .main-box {
     display: flex;
 
@@ -90,12 +91,13 @@ nav {
 
 /* john dan */
 
-.section-becco{
+.section-becco {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
 }
+
 .nav-bottom {
     color: grey;
     font-weight: 800;
@@ -108,9 +110,10 @@ nav {
     margin: 10px 5px;
 }
 
-.becco{
+.becco {
     position: relative;
 }
+
 .becco span {
     color: white;
     font-size: 15px;
@@ -170,6 +173,7 @@ ul {
     justify-content: center;
     margin: 0 40px;
     font-size: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -179,6 +183,9 @@ li {
     color: gray;
     margin: 20px 10px;
     font-weight: 800;
+}
+li:hover{
+    color: white;
 }
 
 /* gallery-songs */
@@ -207,10 +214,28 @@ li {
     width: calc(100% / 6);
     padding: 0 5px;
     margin: 15px 0;
+    position: relative;
 }
+
+.song i {
+    display: none;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+.song:hover i{
+    display: block;
+}
+
 
 .song img {
     width: 100%;
+}
+
+.song:hover img{
+    opacity: 0.5;
 }
 
 .song h3 {
@@ -260,9 +285,17 @@ footer {
     font-size: 10px;
 }
 
+.sinister-text h4:hover {
+    text-decoration: underline;
+}
+
 .sinister-text p {
     color: gray;
     font-size: 10px;
+}
+
+.sinister-text p:hover {
+    text-decoration: underline;
 }
 
 /* icon */
@@ -273,6 +306,10 @@ footer {
 .icon-left i {
     color: gray;
     padding: 10px;
+}
+
+.icon-left i:hover {
+    color: aqua;
 }
 
 /* command btn */
@@ -294,6 +331,10 @@ footer {
     margin: 20px;
     color: white;
     display: block;
+}
+
+.command i:hover {
+    color: grey;
 }
 
 /* volume bar */
@@ -322,6 +363,10 @@ footer {
     left: -2px;
 }
 
+.time-passed:hover {
+    border: 2px solid springgreen;
+}
+
 
 
 
@@ -344,6 +389,10 @@ footer {
     padding: 5px;
 }
 
+.icon i:hover {
+    color: deepskyblue;
+}
+
 .volume-set-bar {
     width: 30%;
     height: 1px;
@@ -360,6 +409,10 @@ footer {
     position: absolute;
     top: -2px;
     left: -2px;
+}
+
+.volume-up:hover {
+    border: 2px solid blue;
 }
 
 
@@ -415,7 +468,20 @@ footer {
         display: none;
     }
 
-    .becco span{
+    .becco img {
+        width: 80%;
+        margin-right: 50px;
+    }
+
+    .becco span {
+        display: none;
+    }
+
+    .nav-bottom {
+        display: none;
+    }
+
+    .line {
         display: none;
     }
 }
