@@ -31,6 +31,7 @@
 .logo {
     width: 80%;
     padding: 10px 0;
+    height: 60px;
 }
 
 .show {
@@ -47,6 +48,7 @@
 
 nav {
     display: flex;
+    height: 120px;
 }
 
 .col-left-icon img {
@@ -75,7 +77,9 @@ nav {
 .playlist-left {
     display: block;
     margin: 0;
-    height: calc(70% - 80px);
+    height: calc(100vh - 360px);
+    overflow: hidden;
+    min-height: 5px;
 }
 
 .playlist-left li {
@@ -84,6 +88,12 @@ nav {
 
 /* john dan */
 
+.section-becco{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
 .nav-bottom {
     color: grey;
     font-weight: 800;
@@ -96,15 +106,21 @@ nav {
     margin: 10px 5px;
 }
 
+.becco{
+    position: relative;
+}
 .becco span {
     color: white;
     font-size: 15px;
     font-weight: 800;
+    position: absolute;
+    top: 10px;
+    right: 45px;
 
 }
 
 .becco img {
-    width: 20%;
+    width: 21%;
     border-radius: 50%;
 }
 
@@ -393,6 +409,10 @@ footer {
     }
 
     .volume-set-bar {
+        display: none;
+    }
+
+    .becco span{
         display: none;
     }
 }
